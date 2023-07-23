@@ -6,7 +6,7 @@ import articles from './article-content';
 import CommentsList from '../components/CommentsList';
 
 const ArticlePage = () => {
-    const [ articleInfo, setArticleInfo ] = useState({ upvotes: 0, comments: [] });
+    const [articleInfo, setArticleInfo] = useState({ upvotes: 0, comments: [] });
     const { articleId } = useParams();
 
     useEffect(() => {
@@ -21,18 +21,33 @@ const ArticlePage = () => {
 
     const article = articles.find(article => article.name === articleId);
 
+    const addUpvote = async () => {
+        const response = await axios.put(`/api/articles/${articleId}/upvote`);
+        const updatedArticle = response.data;
+        setArticleInfo(updatedArticle);
+    }
+    const addDownvote = async () => {
+        const response = await axios.put(`/api/articles/${articleId}/downvote`);
+        const updatedArticle = response.data;
+        setArticleInfo(updatedArticle);
+    }
+
     if (!article) {
         return <NotFoundPage />
     }
 
     return (
         <>
-        <h1>{article.title}</h1>
-        <p>This article has {articleInfo.upvotes} upvote(s)</p>
-        {article.content.map((paragraph, i) => (
-            <p key={i}>{paragraph}</p>
-        ))}
-        <CommentsList comments={articleInfo.comments}/>
+            <h1>{article.title}</h1>
+            <div className="upvotes-section">
+                <button onClick={addUpvote}>Upvote</button>
+                <button onClick={addDownvote}>Downvote</button>
+                <p>This article has {articleInfo.upvotes} upvote(s)</p>
+            </div>
+            {article.content.map((paragraph, i) => (
+                <p key={i}>{paragraph}</p>
+            ))}
+            <CommentsList comments={articleInfo.comments} />
         </>
     );
 }
