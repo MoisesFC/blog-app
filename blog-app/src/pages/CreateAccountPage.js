@@ -13,7 +13,7 @@ const CreateAccountPage = () => {
 
     const createAccount = async () => {
         try {
-            if (password != confirmPassword) {
+            if (password !== confirmPassword) {
                 setError('Passwords do not match')
                 return;
             }
