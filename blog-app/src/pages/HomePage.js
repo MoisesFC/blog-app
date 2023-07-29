@@ -1,6 +1,9 @@
+import profilePic from '../img/profile_pic.jpg'
+
 const HomePage = () => (
     <>
         <h1>Hello, welcome to my blog!</h1>
+        <img class='profile-picture' src={profilePic} alt="profile picture"/>
         <p>
             Thank you for stepping into the captivating world of my blog, where words dance and ideas come to life. Whether you are an avid reader or a curious wanderer, I am thrilled to have you here. This virtual space is a reflection of my passions, experiences, and musings, and I hope it becomes a source of inspiration and knowledge for you.
         </p>

@@ -1,7 +1,7 @@
 const CommentsList = ({ comments }) => {
 
     if (comments.length === 0) {
-        return <h4>No comments yet.</h4>;
+        return <h4 style={{paddingBottom: '55px'}}>No comments yet.</h4>;
       }
 
         return (

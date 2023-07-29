@@ -49,7 +49,7 @@ const ArticlePage = () => {
                 {user
                     ? <button onClick={addUpvote}>{canUpvote ? 'Upvote' : 'Already voted'}</button>
                     : <button>Log in to upvote</button>}
-                <p>This article has <strong>{articleInfo.upvotes}</strong> upvote(s)</p>
+                <p style={{padding: '20px'}}>This article has <strong>{articleInfo.upvotes}</strong> upvote(s)</p>
             </div>
             {article.content.map((paragraph, i) => (
                 <p key={i}>{paragraph}</p>
