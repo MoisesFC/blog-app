@@ -7,11 +7,14 @@ import useUser from './hooks/useUser';
 const NavBar = () => {
   const { user } = useUser();
   const navigate = useNavigate();
-
   const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   const toggleMobileMenu = () => {
     setShowMobileMenu((prevState) => !prevState);
+  };
+
+  const handleMenuItemClick = () => {
+    setShowMobileMenu(false); // Close the mobile menu when a menu item is clicked
   };
 
   return (
@@ -23,18 +26,17 @@ const NavBar = () => {
           <button onClick={() => navigate('/login')}>Log In</button>
         )}
       </div>
-
       <button className='mobile-menu-button' onClick={toggleMobileMenu}>
         ☰
       </button>
       <ul className={`nav-links ${showMobileMenu ? 'show-mobile-menu' : ''}`}>
-        <li>
+        <li onClick={handleMenuItemClick}>
           <Link to="/">Home</Link>
         </li>
-        <li>
+        <li onClick={handleMenuItemClick}>
           <Link to="/about">About</Link>
         </li>
-        <li>
+        <li onClick={handleMenuItemClick}>
           <Link to="/articles">Articles</Link>
         </li>
       </ul>
@@ -43,3 +45,4 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
