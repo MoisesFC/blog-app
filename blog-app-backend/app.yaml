@@ -1,4 +1,4 @@
 includes:
   - prod-env.yaml
-runtime: nodejs16
+runtime: nodejs18
 
