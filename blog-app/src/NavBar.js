@@ -14,7 +14,7 @@ const NavBar = () => {
   };
 
   const handleMenuItemClick = () => {
-    setShowMobileMenu(false); // Close the mobile menu when a menu item is clicked
+    setShowMobileMenu(false); 
   };
 
   return (
