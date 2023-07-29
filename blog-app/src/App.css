@@ -13,7 +13,7 @@ body {
 button {
   padding: 16px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   background-color: rgb(68, 68, 68);
   color: white;
   border-radius: 8px;
@@ -32,6 +32,7 @@ nav {
   top: 0;
   width: 100%;
   background: rgb(102, 102, 102);
+  height: 75px;
 }
 
 nav ul {
@@ -66,6 +67,8 @@ button:hover{
   max-width: 800px;
   margin: auto;
   padding-top: 72px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .article-list-item {
@@ -132,3 +135,88 @@ input, textarea {
   width: 50%;
   border-radius: 50%;
 }
+
+/* ... Your existing CSS ... */
+
+/* Add styles for the mobile menu */
+.mobile-menu-button {
+  display: none;
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(102, 102, 102); /* Add background color for the mobile menu */
+  transition: height 0.3s ease; /* Add a transition effect for smoother animation */
+}
+
+.nav-links.show-mobile-menu {
+  display: block; /* Display the mobile menu content when showMobileMenu is true */
+}
+
+.nav-links li {
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 24px 32px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right button {
+  margin-left: 16px;
+}
+
+/* Styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide the menu items on small screens by default */
+    position: absolute;
+    top: 68px; /* Adjust this value based on your design */
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links.show-mobile-menu {
+    display: block; /* Display the mobile menu items when showMobileMenu is true */
+  }
+
+  .nav-links li {
+    display: block;
+    padding: 16px 0;
+  }
+
+  .mobile-menu-button {
+    display: block;
+  }
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 769px) {
+  .nav-links {
+    display: block; /* Display the menu items on larger screens */
+    position: static;
+    width: auto;
+  }
+
+  .mobile-menu-button {
+    display: none;
+  }
+}
+
