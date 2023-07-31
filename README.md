@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# Full-Stack Blog App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Full-Stack Blog App! This is a web application built using React for the front end, Node.js and Express.js for the back end development and API implementation, MongoDB for the database, Firebase for Authentication, and Google Cloud for hosting.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Full-Stack Blog App](#full-stack-blog-app)
+  - [Table of Contents](#table-of-contents)
+  - [Features](#features)
+  - [Description](#description)
+  - [Sapshots](#sapshots)
+    - [Home Page](#home-page)
+    - [Articles List Page](#articles-list-page)
+    - [Article Page](#article-page)
+  - [Installation](#installation)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Alt Text](blog-app/src/img/techStack2.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- User registration and authentication with Firebase
+- Like and comment on blog posts
+- Responsive and user-friendly UI
+- Secure data storage with MongoDB
+- Scalable and reliable hosting with Google Cloud
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Description
 
-### `npm run build`
+Full application stored on this GIT repository, blog-app beign the front end and blog-app-backend being the back-end.
+Server API implementation located at [Path to server file](/blog-app-backend/src/server.js)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This application let any user sign up for the app to be able to add upvotes and create comments to the different blog posts. This authentication is build using Google Firebase API.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Site is created using REACT for Front-End Development, NodeJS and ExpressJS for Back-End and API Development.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The site is beign hosted by the Google Cloud Platform and can be accesible anywhere using this link: [Full Stack React Blog App](https://react-blog-a5f95.ue.r.appspot.com/)
 
-### `npm run eject`
+## Sapshots
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Home Page
+![Alt Text](blog-app/src/img/homeScreenSnip.jpg)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Articles List Page
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Alt Text](blog-app/src/img/articlesListSnip.jpg)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Article Page
 
-## Learn More
+![Alt Text](blog-app/src/img/articleSnip.jpg)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Installation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To run this application locally, you need to have Node.js and npm installed on your machine. Clone this repository and follow the steps below:
 
-### Code Splitting
+1. Install the required npm packages for the front end and back end:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+cd blog-app
+npm install
 
-### Analyzing the Bundle Size
+cd ../blog-app-backend
+npm install
+npm install -g firebase-tools
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+global
+install Google Cloud CLI, for Windows: https://cloud.google.com/sdk/docs/downloads-versioned-archives.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<!-- # Full-Stack Blog App
 
-### Advanced Configuration
+## Created using the following technologines:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![Alt Text](./blog-app/src/img/techStack2.png)
 
-### Deployment
+- REACT for Front-End development.
+- NodeJS and ExpressJS for Back-End development and API.
+- MongoDB as database.
+- Firebase for user Authentication.
+- Google Cloud for Hosting.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Description
 
-### `npm run build` fails to minify
+####  -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
