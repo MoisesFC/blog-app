@@ -126,6 +126,20 @@ const articles = [
 
             `In conclusion, Google Cloud is a versatile and powerful cloud computing platform that unlocks vast potential for businesses and developers. By understanding its core concepts, exploring key services, and leveraging its advantages, businesses can scale and innovate, while developers can create cutting-edge applications with ease. Whether you're a seasoned professional or just starting your cloud journey, Google Cloud offers a compelling and user-friendly environment to drive your digital transformation. Embrace Google Cloud and embrace the future of cloud computing.`
         ]
+    }, {
+        name: 'nodejs',
+        title: '',
+        content: [
+            `Node.js is a powerful open-source JavaScript runtime built on Chrome's V8 JavaScript engine. It allows developers to execute JavaScript code on the server-side, making it an essential tool for building scalable and high-performance web applications. Node.js was created by Ryan Dahl in 2009 and has since gained widespread popularity among developers due to its versatility and efficiency.`,
+
+`One of the key features of Node.js is its non-blocking, event-driven architecture. Unlike traditional server-side languages, which use a synchronous approach, Node.js employs an event loop that enables it to handle multiple requests concurrently. This asynchronous nature makes Node.js particularly suitable for handling real-time applications and I/O-intensive tasks, such as chat applications, gaming servers, and file uploads.`,
+
+`Node.js has an extensive package ecosystem called npm (Node Package Manager), which hosts over a million open-source packages. Developers can easily integrate these packages into their projects to add functionalities, such as web frameworks, databases, authentication systems, and more. The npm community has played a significant role in the rapid growth of Node.js, allowing developers to build complex applications with ease.`,
+
+`With its ability to share code between the client and server-side, Node.js has also become popular for developing isomorphic applications. This enables developers to run the same JavaScript code on both the server and the client, reducing redundancy and simplifying maintenance. Additionally, Node.js supports cross-platform development, making it an attractive choice for creating applications that can run on various operating systems.`,
+
+`In conclusion, Node.js has revolutionized the web development landscape by introducing server-side JavaScript execution. Its event-driven, non-blocking architecture, vast package ecosystem, and cross-platform compatibility have made it a go-to choice for developers looking to build scalable, real-time applications. As Node.js continues to evolve and gain support from the community, it will undoubtedly remain a dominant force in the world of server-side development for years to come.`
+        ]
     }
 ];
 
