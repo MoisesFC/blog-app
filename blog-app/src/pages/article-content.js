@@ -128,19 +128,39 @@ const articles = [
         ]
     }, {
         name: 'nodejs',
-        title: '',
+        title: 'Getting started with NodeJS',
         content: [
             `Node.js is a powerful open-source JavaScript runtime built on Chrome's V8 JavaScript engine. It allows developers to execute JavaScript code on the server-side, making it an essential tool for building scalable and high-performance web applications. Node.js was created by Ryan Dahl in 2009 and has since gained widespread popularity among developers due to its versatility and efficiency.`,
 
-`One of the key features of Node.js is its non-blocking, event-driven architecture. Unlike traditional server-side languages, which use a synchronous approach, Node.js employs an event loop that enables it to handle multiple requests concurrently. This asynchronous nature makes Node.js particularly suitable for handling real-time applications and I/O-intensive tasks, such as chat applications, gaming servers, and file uploads.`,
+            `One of the key features of Node.js is its non-blocking, event-driven architecture. Unlike traditional server-side languages, which use a synchronous approach, Node.js employs an event loop that enables it to handle multiple requests concurrently. This asynchronous nature makes Node.js particularly suitable for handling real-time applications and I/O-intensive tasks, such as chat applications, gaming servers, and file uploads.`,
 
-`Node.js has an extensive package ecosystem called npm (Node Package Manager), which hosts over a million open-source packages. Developers can easily integrate these packages into their projects to add functionalities, such as web frameworks, databases, authentication systems, and more. The npm community has played a significant role in the rapid growth of Node.js, allowing developers to build complex applications with ease.`,
+            `Node.js has an extensive package ecosystem called npm (Node Package Manager), which hosts over a million open-source packages. Developers can easily integrate these packages into their projects to add functionalities, such as web frameworks, databases, authentication systems, and more. The npm community has played a significant role in the rapid growth of Node.js, allowing developers to build complex applications with ease.`,
 
-`With its ability to share code between the client and server-side, Node.js has also become popular for developing isomorphic applications. This enables developers to run the same JavaScript code on both the server and the client, reducing redundancy and simplifying maintenance. Additionally, Node.js supports cross-platform development, making it an attractive choice for creating applications that can run on various operating systems.`,
+            `With its ability to share code between the client and server-side, Node.js has also become popular for developing isomorphic applications. This enables developers to run the same JavaScript code on both the server and the client, reducing redundancy and simplifying maintenance. Additionally, Node.js supports cross-platform development, making it an attractive choice for creating applications that can run on various operating systems.`,
 
-`In conclusion, Node.js has revolutionized the web development landscape by introducing server-side JavaScript execution. Its event-driven, non-blocking architecture, vast package ecosystem, and cross-platform compatibility have made it a go-to choice for developers looking to build scalable, real-time applications. As Node.js continues to evolve and gain support from the community, it will undoubtedly remain a dominant force in the world of server-side development for years to come.`
+            `In conclusion, Node.js has revolutionized the web development landscape by introducing server-side JavaScript execution. Its event-driven, non-blocking architecture, vast package ecosystem, and cross-platform compatibility have made it a go-to choice for developers looking to build scalable, real-time applications. As Node.js continues to evolve and gain support from the community, it will undoubtedly remain a dominant force in the world of server-side development for years to come.`
         ]
-    }
+    }, {
+        name: 'python-fundamentals',
+        title: "Python Fundamentals: Building a Strong Foundation for Coding Success",
+        content: [
+            `Python, a versatile and dynamic programming language, has taken the tech world by storm.Whether you're an aspiring developer or a seasoned professional, understanding Python fundamentals is essential for mastering this language and unlocking its vast potential. In this blog post, we'll delve into the core concepts that form the bedrock of Python programming.`,
+
+            `1. Readability and Simplicity:`,
+            `One of Python's most distinguishing features is its emphasis on readability and simplicity. Its clean and elegant syntax allows developers to express concepts concisely, making it easier to write and maintain code. Python's use of indentation for block structuring enforces consistent and organized code, aiding in creating error- free and maintainable programs.This approach not only enhances collaboration but also reduces the learning curve for beginners, enabling them to focus on problem - solving rather than wrestling with complex syntax.`,
+
+            `2. Data Types and Variables:`,
+            `Python supports a variety of built -in data types, including integers, floating - point numbers, strings, lists, tuples, dictionaries, and more.Understanding these fundamental data types and their manipulation is crucial for effective coding.Variables act as containers for storing data, allowing you to assign values and operate on them.Python's dynamic typing enables you to change the type of a variable on-the-fly, granting flexibility and adaptability to your programs.`,
+
+            `3. Control Flow and Loops:`,
+            `Python offers various control structures, such as if statements, loops, and conditional expressions, to dictate the flow of your program.Conditionals enable you to make decisions based on certain criteria, while loops like "for" and "while" iterate through sequences and perform actions repeatedly.These control structures are pivotal for building decision - making processes, executing tasks iteratively, and optimizing code efficiency.`,
+
+            `4. Functions and Modularization:`,
+            ` Functions are blocks of code that can be defined and reused to perform specific tasks.Python's function-centric approach promotes modularization, allowing you to break down complex problems into smaller, manageable parts. By encapsulating functionality within functions, you enhance code readability, maintainability, and reusability. Additionally, Python provides built-in functions and allows you to create custom functions, contributing to a comprehensive and extensible toolkit.`,
+
+            `In conclusion, Python fundamentals serve as the cornerstone of effective programming in this versatile language.By embracing its readability, mastering data types and variables, understanding control flow, and leveraging functions, you'll build a robust foundation that empowers you to tackle diverse coding challenges. Whether you're venturing into software development, data analysis, machine learning, or web development, a solid grasp of Python fundamentals is your key to unlocking a world of possibilities and achieving coding success.So, roll up your sleeves, dive into the Python ecosystem, and embark on a journey towards becoming a proficient and skilled Python programmer.`,
+        ]
+    },
 ];
 
 export default articles;
